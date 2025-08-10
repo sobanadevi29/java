@@ -1,0 +1,31 @@
+package day2;
+import java.util.Scanner;
+
+public class problem1 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner (System.in);
+		int num=5;
+		int num2=15;
+		System.out.println(num>num2);
+		System.out.println(num<num2);
+	    System.out.println(num==num2);
+	    System.out.println(num<=num2);
+	    System.out.println(num>=num2);
+	    System.out.println(num!=num2);
+	    
+	    
+	    System.out.println(num==5&&num2==15);
+	    System.out.println(num==4||num2==1);
+		System.out.println(!(num>num2));		
+		
+		
+		num+=3;
+		System.out.println(num);
+		 num2-=10;
+		 System.out.println(num2);
+		 num/=2;
+		 System.out.println(num);
+		}
+
+}
