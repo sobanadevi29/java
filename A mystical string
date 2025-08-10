@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+
+        int x = sc.nextInt();   
+        int y = sc.nextInt();    
+        double ti = sc.nextDouble(); 
+        double tj = sc.nextDouble(); 
+
+        if (tj >= ti) {
+            System.out.println("Invalid Input");
+            return;
+        }
+
+        double travelTime = (double) x / y;  
+        double arrivalTime = tj + travelTime;
+
+        if (arrivalTime <= ti) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
