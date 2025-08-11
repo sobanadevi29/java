@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String b1 = sc.nextLine(), b2 = sc.nextLine(), b3 = sc.nextLine();
+
+        if (!(b1.equals("engaged") || b1.equals("disengaged") ||
+              b2.equals("engaged") || b2.equals("disengaged") ||
+              b3.equals("engaged") || b3.equals("disengaged"))) {
+            System.out.println("Invalid Input");
+        } 
+        else if (b1.equals("engaged") && b2.equals("engaged") && b3.equals("engaged")) {
+            System.out.println("Initiating Warp Drive!");
+        } 
+        else {
+            System.out.println("Hold On! Some Belts are Adrift.");
+        }
+    }
+}
