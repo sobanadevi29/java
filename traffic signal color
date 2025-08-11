@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        String signal = sc.nextLine(); 
+        
+        if (signal.equals("red")) {
+            System.out.println("Stop");
+        } else if (signal.equals("yellow")) {
+            System.out.println("Get Ready");
+        } else if (signal.equals("green")) {
+            System.out.println("Go");
+        } else {
+            System.out.println("Invalid Input");
+        }
+        
+        sc.close();
+    }
+}
