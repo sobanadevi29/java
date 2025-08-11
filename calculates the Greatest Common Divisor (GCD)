@@ -1,0 +1,44 @@
+import java.util.*;
+
+public class Main {
+
+    static int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int gokul = sc.nextInt();
+        int minor = sc.nextInt();
+        int total = sc.nextInt();
+        int turn = 1, gokulUsed = 0, minorUsed = 0;
+
+        while (total > 0) {
+            int p = (turn == 1) ? gokul : minor;
+            int val = gcd(p, total);
+            total -= val;
+
+            if (turn == 1) {
+                gokulUsed += val;
+                turn = 2;
+            } else {
+                minorUsed += val;
+                turn = 1;
+            }
+        }
+
+        System.out.println(
+            gokulUsed > minorUsed ? "Winner: Gokul" :
+            minorUsed > gokulUsed ? "Winner: Minor" :
+            "It's a draw!"
+        );
+        
+        
+    }
+}
