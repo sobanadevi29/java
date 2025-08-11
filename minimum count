@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int k = sc.nextInt(); 
+        int perCycle = 2 * n;
+        int cycles = k / perCycle;        
+        if (k % perCycle != 0) {
+            cycles = cycles + 1;
+        }
+        System.out.println("The minimum count of n levels is " + cycles);
+        sc.close();
+    }
+}
