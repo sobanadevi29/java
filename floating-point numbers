@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       
+        Scanner sc = new Scanner(System.in);
+        String[] names = {"Front-left", "Rear-left", "Rear-right", "Front-right"};
+
+        for (int i = 0; i < 4; i++) {
+            float pressure = sc.nextFloat();
+            if (pressure < 33)
+                System.out.println(names[i] + " : Inflate");
+            else if (pressure > 33)
+                System.out.println(names[i] + " : Deflate");
+            else
+                System.out.println(names[i] + " : Untouched");
+        }
+    }
+}
