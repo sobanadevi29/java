@@ -1,0 +1,32 @@
+package day8;
+
+class grandma{
+	void display()
+	{
+		System.out.println("villa");
+	}
+}
+
+class uncle extends grandpa{
+	void property()
+	{
+		System.out.println("house,land,money");
+	}
+}
+class aunt extends grandpa{
+	void show()
+	{
+		System.out.println("jewel");
+	}
+}
+
+public class hierarchicalinheritance {
+
+	public static void main(String[] args) {
+		aunt obj= new aunt();
+		obj.display();
+		obj.show();
+
+	}
+
+}
