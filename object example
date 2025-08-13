@@ -1,0 +1,17 @@
+package day8;
+
+public class hotel {
+	String hotelname="maran";
+	String food="briyani";
+	int price=38;
+	public static void main(String[] args) {
+		hotel obj=new hotel();
+		System.out.println(obj.hotelname);
+		hotel obj1=new hotel();
+		System.out.println(obj1.price);
+		hotel obj2=new hotel();
+		System.out.println(obj2.food);
+		
+	}
+
+}
