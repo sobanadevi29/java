@@ -1,0 +1,27 @@
+public class statickeyword {
+    static String collegeName;
+    int rollNo;
+    String name;
+    static {
+        collegeName = "Mount Zion College";
+    }
+    public statickeyword (int rollNo, String name) {
+        this.rollNo = rollNo;
+        this.name = name;
+    }
+    
+    public static void showCollege() {
+        System.out.println("College: " + collegeName);
+    }
+    public void displayStudent() {
+        System.out.println(" Roll No: " + rollNo + ", Name: " + name + ", College: " + collegeName);
+    }
+
+    public static void main(String[] args) {
+    	statickeyword .showCollege();
+    	statickeyword  s1 = new statickeyword (101,"sobana");
+    	statickeyword  s2 = new statickeyword (102,"devi");
+        s1.displayStudent();
+        s2.displayStudent();
+    }
+}
