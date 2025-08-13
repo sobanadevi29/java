@@ -1,0 +1,18 @@
+package day7;
+
+public class basicstring {
+
+	public static void main(String[] args) {
+		String str ="sobana";
+		String str1="devi";
+		String str2=new String("cse");
+		String str3=new String("student");
+		System.out.println(str.length());
+		System.out.println(str==str1);
+		System.out.println(str.equals(str2));
+		System.out.println(str2.equalsIgnoreCase(str3));
+		System.out.println(str2.toUpperCase());
+	}
+
+}
+
