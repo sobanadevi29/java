@@ -1,0 +1,25 @@
+package day8;
+
+public class problem {
+	int age;
+	String name;
+	problem(int age,String name){
+		this.age=age;
+		this.name=name;
+	}
+	void display()
+	{
+		System.out.println("Hello display");
+	}
+	void show() {
+		this.display();
+		System.out.println("hello show");
+		
+	}
+	public static void main(String[] args) {
+		problem obj= new problem(20, "Sobana");
+				obj.show();
+
+	}
+
+}
