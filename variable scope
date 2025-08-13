@@ -1,0 +1,19 @@
+package day8;
+
+public class variablescope {
+	int rollno=55;
+	String name="sobana";
+	static String college="zion";
+     void display (int a,String name) {
+    	 System.out.println(a + " " + name + " " + college);
+     }
+	public static void main(String[] args) {
+		variablescope obj=new variablescope();
+		variablescope.college="mount";
+		obj.display(10, "rama");
+		obj.display(11," sri");
+		obj.display(12, "raji");
+		obj.display(13, "vicky");
+	}
+
+}
