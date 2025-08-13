@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+           String input=sc.nextLine();
+            StringBuffer sb=new StringBuffer(input);
+        StringBuffer a= sb.reverse();
+       String b = a.toString();
+        
+        if(b.equals(input)){
+            System.out.println("Palindrome Revelation! The string is a palindrome.");
+        }else{
+            System.out.println("Palindromic Mystery Unsolved! The string is not a palindrome.");
+        }
+    }
+}
